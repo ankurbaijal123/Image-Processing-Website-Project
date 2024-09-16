@@ -26,3 +26,33 @@ Node.js: JavaScript runtime for building server-side applications.
 Express: Web application framework for Node.js.
 Sharp: Image processing library for handling image manipulation.
 REST API: For communication between frontend and backend.
+
+Prerequisites
+Node.js (v14 or higher)
+npm (v6 or higher) 
+
+Clone this Repository
+git clone https://github.com/ankurbaijal123/Image-Processing-Website-Project.git
+cd Image-Processing-Website-Project
+
+Backend Setup
+
+Navigate to the Backend Directory:
+cd backend
+
+Install Dependencies:
+npm install
+
+Start the Backend Server:
+node server.js
+
+Frontend Setup
+
+Navigate to the Frontend Directory:
+cd frontend
+
+Install Dependencies:
+npm install
+
+Start the Frontend Server:
+npm start
