@@ -3,13 +3,6 @@
 ## Overview:
 The Image Processing Website Project is a full-stack application that allows users to upload, process, and download images. The project includes a frontend developed with React and a backend built with Node.js and Express. The application supports various image processing features such as brightness, contrast, and rotation adjustments.
 
-# Image Editor Web Application
-
-This is a full-stack web application for editing images in real-time. Users can upload an image, adjust brightness, hue, saturation, rotation, crop, and then download the processed image.
-
-## Video of Project
-
-
 ## Features
 
 - Upload an image in **JPEG** or **PNG** format.
@@ -48,7 +41,6 @@ This is a full-stack web application for editing images in real-time. Users can 
 ### Instructions
 
 1. **Clone the repository**:
-   ```bash
    git clone https://github.com/your-username/Image-Processing-Website-Project.git
    cd image-editor
 
@@ -67,17 +59,16 @@ This is a full-stack web application for editing images in real-time. Users can 
     ## In the root of your project, run:
         cd backend
         node server.js
-
-
-    The backend server will start at http://localhost:5000.
-
+        Backend server will start at http://localhost:5000.
+           
 4. **Start the Frontend React App**:
 
     ## In the frontend folder, run:
         npm start
-
-
-The frontend will run at http://localhost:3000.
+        Frontend will run at http://localhost:3000.
+5. **User's can also run the application by using**
+     ## npm run
+     ## in main Image-Processing-Website-Project Folder
 
 ## Running the Application
     Visit http://localhost:3000 in your browser.
@@ -85,31 +76,34 @@ The frontend will run at http://localhost:3000.
     Adjust the brightness, hue, saturation, and rotation of the image using the sliders.
     Use the Reset button to revert the image to its original state.
     Click the Download button to save the edited image.
+    User has option to download the JPEG or PNG Image Format.
 
 ## Image Upload
     POST /upload
-    Upload an image (JPEG or PNG) and store it on the server.
+    Upload an image (JPEG or PNG) and store it on the server's backend in uploads folder.
     Returns the URL of the uploaded image.
 
 ## Image Processing
     GET /process-image
     Apply adjustments to the uploaded image such as brightness, hue, saturation, and rotation.
     Returns the processed image blob.
-
-### Error Handling ###
-    If an invalid file format is uploaded (anything other than JPEG or PNG), an error message will pop up asking the user to upload a valid file.
-    Errors while processing or downloading the image will be logged in the browser console.
     
 ### Future Enhancements ###
     Add more image manipulation features like contrast adjustment, cropping, and filters.
     Improve the cropping tool by allowing users to select custom regions.
     
+### Error Handling ###
+    If an invalid file format is uploaded (anything other than JPEG or PNG), an error message will pop up asking the user to upload a JPEG OR PNG file.
+    Errors while processing or downloading the image will be logged in the browser console.
+    
+## Images of the Project   
 ![image](https://github.com/user-attachments/assets/71ac7ab3-cbf2-4b90-8c1c-b4032a8ebfbc)
 ![image](https://github.com/user-attachments/assets/cb26f2ca-2d66-4bd6-807b-016918c07624)
 ![image](https://github.com/user-attachments/assets/38b9a5c4-dfe6-43cb-8ca8-87575ab7ed97)
 Processed Image :
 ![image](https://github.com/user-attachments/assets/4fbb4bb5-2b1c-4788-abd5-6b83b906e423)
 
+## Video of Project
 https://github.com/user-attachments/assets/1777be6c-11e6-4457-a4c3-f801ff343685
 
 
