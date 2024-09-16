@@ -35,7 +35,7 @@ Clone this Repository
 git clone https://github.com/ankurbaijal123/Image-Processing-Website-Project.git
 cd Image-Processing-Website-Project
 
-Backend Setup
+Backend Setup----
 
 Navigate to the Backend Directory:
 cd backend
@@ -46,7 +46,7 @@ npm install
 Start the Backend Server:
 node server.js
 
-Frontend Setup
+Frontend Setup----
 
 Navigate to the Frontend Directory:
 cd frontend
