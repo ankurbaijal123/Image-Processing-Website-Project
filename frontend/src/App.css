@@ -1,0 +1,173 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f8f9fa; /* Light neutral background */
+  color: #2f3640; /* Dark charcoal text */
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header styling */
+.app-header {
+  background-color: #353b48; /* Dark charcoal for a professional feel */
+  color: white;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.app-header p {
+  font-size: 15px;
+  color: #dcdde1; /* Light text for description */
+}
+
+/* Upload section */
+.upload-section {
+  margin: 20px 0;
+}
+
+.upload-section input {
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #dcdde1; /* Subtle border */
+  border-radius: 5px;
+  background-color: #fff; /* White input background */
+  color: #2f3640;
+}
+
+.upload-section button {
+  background-color: #4cd137; /* Muted green for primary button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.upload-section button:hover {
+  background-color: #44bd32; /* Darker green on hover */
+}
+
+/* Image editor */
+.image-editor {
+  margin-top: 20px;
+}
+
+.image-container img {
+  max-width: 250px; /* Keep the image relatively small */
+  max-height: 250px;
+  margin: 20px auto;
+  display: block;
+  border: 1px solid #dcdde1; /* Soft border */
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.controls {
+  margin: 20px 0;
+}
+
+.controls label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #2f3640; /* Neutral dark text for labels */
+}
+
+.controls input[type="range"] {
+  width: 250px;
+}
+
+/* General button styling */
+button.download-btn {
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 4px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button.download-btn:hover {
+  transform: scale(1.05); /* Slightly enlarge */
+}
+
+/* PNG Button */
+button.download-btn.png-btn {
+  background-color: #487eb0; /* Muted blue */
+}
+
+button.download-btn.png-btn:hover {
+  background-color: #40739e; /* Darker blue on hover */
+}
+
+/* JPG Button */
+button.download-btn.jpg-btn {
+  background-color: #e84118; /* Muted red */
+}
+
+button.download-btn.jpg-btn:hover {
+  background-color: #c23616; /* Darker red on hover */
+}
+
+.image-editor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container {
+  display: flex;
+  gap: 10px;
+}
+
+.original-image, .processed-image {
+  max-width: 300px;
+  max-height: 300px;
+}
+.reset-btn {
+  background-color: #f44336; /* Red color */
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 4px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.reset-btn:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
+
+.reset-btn:focus {
+  outline: none; /* Remove default outline */
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #353b48; /* Dark charcoal */
+  color: white;
+  font-size: 14px;
+  border-radius: 8px;
+}
