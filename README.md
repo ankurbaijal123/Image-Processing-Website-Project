@@ -1,62 +1,109 @@
-Image Processing Website Project
+## Image Processing Website Project
 
-Overview:
+## Overview:
 The Image Processing Website Project is a full-stack application that allows users to upload, process, and download images. The project includes a frontend developed with React and a backend built with Node.js and Express. The application supports various image processing features such as brightness, contrast, and rotation adjustments.
 
-Features:
-Frontend: React-based user interface with real-time image preview and adjustment controls.
-Backend: Node.js and Express server for image processing using the Sharp library.
-Image Processing: Adjust brightness, contrast, and rotation of images.
-File Formats: Supports PNG and JPEG image formats.
-Download Options: Save processed images in JPG or PNG format.
+# Image Editor Web Application
+
+This is a full-stack web application for editing images in real-time. Users can upload an image, adjust brightness, hue, saturation, rotation, crop, and then download the processed image.
+
+## Video of Project
 
 
-Technologies
+## Features
 
-Frontend-
+- Upload an image in **JPEG** or **PNG** format.
+- Adjust image **brightness**, **hue**, **saturation**, and **rotation**.
+- **Download** the edited image.
+- **Reset** functionality to restore the image to its original state.
+- Crop functionality for user-selected portions of the image.
+- Real-time image preview during editing.
+- Responsive design with a modern UI.
 
-React: JavaScript library for building user interfaces.
-TypeScript: Superset of JavaScript that adds static types.
-Context API: For state management.
-CSS/Tailwind: Styling for the user interface.
+## Technologies Used
 
-Backend-
+### Frontend
 
-Node.js: JavaScript runtime for building server-side applications.
-Express: Web application framework for Node.js.
-Sharp: Image processing library for handling image manipulation.
-REST API: For communication between frontend and backend.
+- **React**: Frontend framework.
+- **Axios**: For handling HTTP requests.
+- **CSS**: For styling the components and UI.
+- **JavaScript (ES6)**: Core logic for interactivity.
 
-Prerequisites
-Node.js (v14 or higher)
-npm (v6 or higher) 
+### Backend
 
-Clone this Repository
-git clone https://github.com/ankurbaijal123/Image-Processing-Website-Project.git
-cd Image-Processing-Website-Project
+- **Node.js**: Backend runtime environment.
+- **Express**: Web framework for Node.js.
+- **Multer**: Middleware for handling file uploads.
+- **Sharp**: Image processing library to manipulate images.
+- **Cors**: Middleware to allow cross-origin requests.
 
-Backend Setup----
+## Installation and Setup
 
-Navigate to the Backend Directory:
-cd backend
+### Prerequisites
 
-Install Dependencies:
-npm install
+- **Node.js**: Ensure you have Node.js installed (v12+).
+- **npm**: Node package manager, which comes with Node.js.
+- **Git**: For cloning the repository.
 
-Start the Backend Server:
-node server.js
+### Instructions
 
-Frontend Setup----
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/Image-Processing-Website-Project.git
+   cd image-editor
 
-Navigate to the Frontend Directory:
-cd frontend
+2. **Install dependencies**:
 
-Install Dependencies:
-npm install
+    ## Install backend dependencies:
+        cd backend
+        npm install
 
-Start the Frontend Server:
-npm start
+    ## Install frontend dependencies:
+        cd frontend
+        npm install
 
+3. **Start the Backend Server**:
+
+    ## In the root of your project, run:
+        cd backend
+        node server.js
+
+
+    The backend server will start at http://localhost:5000.
+
+4. **Start the Frontend React App**:
+
+    ## In the frontend folder, run:
+        npm start
+
+
+The frontend will run at http://localhost:3000.
+
+## Running the Application
+    Visit http://localhost:3000 in your browser.
+    Use the upload button to upload an image in either JPEG or PNG format.
+    Adjust the brightness, hue, saturation, and rotation of the image using the sliders.
+    Use the Reset button to revert the image to its original state.
+    Click the Download button to save the edited image.
+
+## Image Upload
+    POST /upload
+    Upload an image (JPEG or PNG) and store it on the server.
+    Returns the URL of the uploaded image.
+
+## Image Processing
+    GET /process-image
+    Apply adjustments to the uploaded image such as brightness, hue, saturation, and rotation.
+    Returns the processed image blob.
+
+### Error Handling ###
+    If an invalid file format is uploaded (anything other than JPEG or PNG), an error message will pop up asking the user to upload a valid file.
+    Errors while processing or downloading the image will be logged in the browser console.
+    
+### Future Enhancements ###
+    Add more image manipulation features like contrast adjustment, cropping, and filters.
+    Improve the cropping tool by allowing users to select custom regions.
+    
 ![image](https://github.com/user-attachments/assets/71ac7ab3-cbf2-4b90-8c1c-b4032a8ebfbc)
 ![image](https://github.com/user-attachments/assets/cb26f2ca-2d66-4bd6-807b-016918c07624)
 ![image](https://github.com/user-attachments/assets/38b9a5c4-dfe6-43cb-8ca8-87575ab7ed97)
