@@ -66,9 +66,9 @@ The Image Processing Website Project is a full-stack application that allows use
     ## In the frontend folder, run:
         npm start
         Frontend will run at http://localhost:3000.
-5. **User's can also run the application by using**
-     ## npm run
-     ## in main Image-Processing-Website-Project Folder
+5. **User's can also run the application by using :**
+     npm run
+     in main Image-Processing-Website-Project Folder
 
 ## Running the Application
     Visit http://localhost:3000 in your browser.
