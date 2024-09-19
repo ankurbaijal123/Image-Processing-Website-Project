@@ -49,10 +49,19 @@ The Image Processing Website Project is a full-stack application that allows use
     ## Install backend dependencies:
         cd backend
         npm install
+        npm install express
+        npm install multer
+        npm install path
+        npm install sharp
+        npm install cors
+
 
     ## Install frontend dependencies:
         cd frontend
         npm install
+        npm install react-lottie
+        npm install axios
+
 
 3. **Start the Backend Server**:
 
